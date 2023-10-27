@@ -4,4 +4,4 @@ plotly
 scipy
 datetime
 numpy
-sklearn
+scikit-learn
