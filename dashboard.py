@@ -80,18 +80,18 @@ path = ''
 predictions = pd.read_csv(path+'ALL_PREDICTIONS.csv', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
 predictions.rename(columns={'0': 'Altura'}, inplace=True)
 
-real = pd.read_csv(path+'Erro_Galheta.CSV', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
+real = pd.read_csv(path+'Erro_Galheta.csv', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
 real.rename(columns={'0': 'Altura'}, inplace=True)
 real = fill_small_gaps_corrected(real, threshold=12)
 
-ssh_real = pd.read_csv(path+'GALHETA_SSH.CSV', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
+ssh_real = pd.read_csv(path+'GALHETA_SSH.csv', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
 ssh_real.rename(columns={'0': 'Altura'}, inplace=True)
 ssh_real = fill_small_gaps_corrected(ssh_real, threshold=12)
 
-ssh_estimado = pd.read_csv(path+'GALHETA_SSH_PRED.CSV', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
+ssh_estimado = pd.read_csv(path+'GALHETA_SSH_PRED.csv', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
 ssh_estimado.rename(columns={'0': 'Altura'}, inplace=True)
 
-teorico = pd.read_csv(path+'GALHETA_TEO.CSV', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
+teorico = pd.read_csv(path+'GALHETA_TEO.csv', decimal = '.', sep=',',thousands=" ",encoding='latin-1',index_col=0)
 teorico.rename(columns={'0': 'Altura'}, inplace=True)
 
 
