@@ -5,3 +5,4 @@ scipy
 datetime
 numpy
 scikit-learn
+gunicorn
