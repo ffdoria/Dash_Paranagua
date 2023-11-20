@@ -350,8 +350,8 @@ galheta_layout = html.Div(
                     dcc.Dropdown(
                         id="galheta-dropdown",
                         options=[
-                            {"label": "Historico", "value": "Historico"},
-                            {"label": "Futuro", "value": "Futuro"},
+                            {"label": "Maré Histórica", "value": "Historico"},
+                            {"label": "Maré Estimada", "value": "Futuro"},
                         ],
                         value=["Historico", "Futuro"],
                         multi=True,
@@ -670,8 +670,8 @@ cais_oeste_layout = html.Div(
                     dcc.Dropdown(
                         id="cais-oeste-dropdown",
                         options=[
-                            {"label": "Historico", "value": "Historico"},
-                            {"label": "Futuro", "value": "Futuro"},
+                            {"label": "Maré Histórica", "value": "Historico"},
+                            {"label": "Maré Estimada", "value": "Futuro"},
                         ],
                         value=["Historico", "Futuro"],
                         multi=True,
