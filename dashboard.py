@@ -767,8 +767,7 @@ def plot_cais_oeste(value,data_escolhida):
                 x=index_history,
                 y=np.array(history.values)[:,0],
                 name="Histórico Maré Meteorológica",
-                line=dict(color="blue", width=3),
-                showlegend=False
+                line=dict(color="blue", width=3)
             )
         )
 
@@ -853,6 +852,7 @@ def plot_galheta_ssh(value,data):
                 y=np.array(history_ssh.values)[:,0],
                 name="Histórico SSH Medido",
                 line=dict(color="orange", width=3),
+                showlegend=False
             )
         )
     
